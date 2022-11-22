@@ -1,12 +1,12 @@
 [Plymouth Theme]
-Name=catppuccin-macchiato
-Description=catppuccin-macchiato
+Name=catppuccin-mocha
+Description=catppuccin-mocha
 ModuleName=two-step
 
 [two-step]
 Font=Noto Sans 12
 TitleFont=Noto Sans Light 30
-ImageDir=/usr/share/plymouth/themes/catppuccin-macchiato
+ImageDir=/usr/share/plymouth/themes/catppuccin-mocha
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.5
 TitleHorizontalAlignment=.5
