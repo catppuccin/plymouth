@@ -6,32 +6,32 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/ndsboy/plymouth/stargazers"><img src="https://img.shields.io/github/stars/ndsboy/plymouth?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/ndsboy/plymouth/issues"><img src="https://img.shields.io/github/issues/ndsboy/plymouth?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/ndsboy/plymouth/contributors"><img src="https://img.shields.io/github/contributors/ndsboy/plymouth?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/plymouth/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/plymouth?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/plymouth/issues"><img src="https://img.shields.io/github/issues/catppuccin/plymouth?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/plymouth/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/plymouth?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://github.com/ndsboy/plymouth/blob/main/assets/preview.png"/>
+	<img src="https://github.com/catppuccin/plymouth/blob/main/assets/preview.png"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://github.com/ndsboy/plymouth/blob/main/assets/latte.png"/>
+<img src="https://github.com/catppuccin/plymouth/blob/main/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://github.com/ndsboy/plymouth/blob/main/assets/frappe.png"/>
+<img src="https://github.com/catppuccin/plymouth/blob/main/assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://github.com/ndsboy/plymouth/blob/main/assets/macchiato.png"/>
+<img src="https://github.com/catppuccin/plymouth/blob/main/assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://github.com/ndsboy/plymouth/blob/main/assets/mocha.png"/>
+<img src="https://github.com/catppuccin/plymouth/blob/main/assets/mocha.png"/>
 </details>
 
 ## Usage
@@ -39,7 +39,7 @@
 1. Clone this repository locally
 
    ```shell
-   git clone https://github.com/ndsboy/plymouth.git && cd plymouth
+   git clone https://github.com/catppuccin/plymouth.git && cd plymouth
    ```
 
 2. Copy all or selected theme from `themes` folder to `/usr/share/plymouth/themes/`, for example to copy all themes use:
