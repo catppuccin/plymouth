@@ -79,28 +79,15 @@
 <details>
 <summary>plymouth-set-default-theme not available on Ubuntu/Mint</summary>
 
-Some distributions use `update-alternatives` for setting the plymouth theme.
-Use the following steps instead:
+Some distributions use `update-alternatives` for setting the plymouth theme. After step 1 and 2, perform the following actions:
 
-1. Clone this repository locally
-
-   ```shell
-   git clone https://github.com/catppuccin/plymouth.git && cd plymouth
-   ```
-
-2. Copy all or selected theme from `themes` folder to `/lib/plymouth/themes/`, for example to copy all themes use:
+3. Install the themes:
 
    ```shell
-   sudo cp -r themes/* /lib/plymouth/themes/
-   ```
-
-3. Install all the themes:
-
-   ```shell
-   sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/catppuccin-latte/catppuccin-latte.plymouth 200
-   sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/catppuccin-frappe/catppuccin-frappe.plymouth 200
-   sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/catppuccin-macchiato/catppuccin-macchiato.plymouth 200
-   sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/catppuccin-mocha/catppuccin-mocha.plymouth 200
+   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-latte/catppuccin-latte.plymouth 200
+   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-frappe/catppuccin-frappe.plymouth 200
+   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-macchiato/catppuccin-macchiato.plymouth 200
+   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-mocha/catppuccin-mocha.plymouth 200
    ```
 
 4. Set the default theme interactively:
