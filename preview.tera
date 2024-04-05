@@ -1,0 +1,19 @@
+---
+whiskers:
+  version: "2.0.0"
+---
+<svg xmlns="http://www.w3.org/2000/svg" 
+  width="512" height="216" viewBox="0 0 512 216" stroke-width="2" 
+  stroke="#{{ text.hex }}" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="0" y="0" width="512" height="216" fill="#{{ base.hex }}" stroke="#{{ base.hex }}"></rect>
+
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    x="154" y="91"
+    width="204" height="34" viewBox="0 0 204 34" stroke-width="2" 
+    stroke="#{{ text.hex }}" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1" y="1" width="202" height="32" rx="16" fill="#{{ surface0.hex }}"></rect>
+    {%- for color in [red, green, yellow, blue, pink, teal] %}
+    <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#{{ color.hex }}" stroke="#{{ color.hex }}"></circle>
+    {%- endfor %}
+  </svg>
+</svg>

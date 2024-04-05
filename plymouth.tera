@@ -1,0 +1,37 @@
+---
+whiskers:
+  version: "2.0.0"
+---
+[Plymouth Theme]
+Name=catppuccin-{{ flavor.identifier }}
+Description=catppuccin-{{ flavor.identifier }}
+ModuleName=two-step
+
+[two-step]
+Font=Noto Sans 12
+TitleFont=Noto Sans Light 30
+ImageDir=/usr/share/plymouth/themes/catppuccin-{{ flavor.identifier }}
+DialogHorizontalAlignment=.5
+DialogVerticalAlignment=.5
+TitleHorizontalAlignment=.5
+TitleVerticalAlignment=.5
+HorizontalAlignment=.5
+VerticalAlignment=.5
+WatermarkHorizontalAlignment=.5
+WatermarkVerticalAlignment=.5
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x{{ base.hex }}
+BackgroundEndColor=0x{{ base.hex }}
+ProgressBarBackgroundColor=0x{{ surface0.hex }}
+ProgressBarForegroundColor=0x{{ base.hex }}
+MessageBelowAnimation=true
+
+[boot-up]
+UseEndAnimation=false
+
+[shutdown]
+UseEndAnimation=false
+
+[reboot]
+UseEndAnimation=false
