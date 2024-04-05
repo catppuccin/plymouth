@@ -1,7 +1,11 @@
+---
+whiskers:
+  version: "2.0.0"
+---
 <svg xmlns="http://www.w3.org/2000/svg" 
   width="34" height="34" viewBox="-5 -5 34 34" stroke-width="2" 
-  stroke="#cad3f5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="-4" y="-4" width="100" height="32" rx="16" fill="#363a4f"></rect>
+  stroke="#{{ text.hex }}" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="-4" y="-4" width="100" height="32" rx="16" fill="#{{ surface0.hex }}"></rect>
   <rect x="5" y="11" width="14" height="10" rx="2"></rect>
   <circle cx="12" cy="16" r="1"></circle>
   <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path>
