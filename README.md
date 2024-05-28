@@ -12,95 +12,58 @@
 </p>
 
 <p align="center">
-	<img src="https://github.com/catppuccin/plymouth/blob/main/assets/preview.webp"/>
+	<img src="assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://github.com/catppuccin/plymouth/blob/main/assets/latte.webp"/>
+<img src="assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://github.com/catppuccin/plymouth/blob/main/assets/frappe.webp"/>
+<img src="assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://github.com/catppuccin/plymouth/blob/main/assets/macchiato.webp"/>
+<img src="assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://github.com/catppuccin/plymouth/blob/main/assets/mocha.webp"/>
+<img src="assets/mocha.webp"/>
 </details>
 
 ## Usage
 
-1. Clone this repository locally
-
-   ```shell
-   git clone https://github.com/catppuccin/plymouth.git && cd plymouth
-   ```
-
-2. Copy all or selected theme from `themes` folder to `/usr/share/plymouth/themes/`, for example to copy all themes use:
-
-   ```shell
-   sudo cp -r themes/* /usr/share/plymouth/themes/
-   ```
-
-3. Set default plymouth theme:
-
-   - 🌻 Latte:
-
-     ```shell
-     sudo plymouth-set-default-theme -R catppuccin-latte
-     ```
-
-   - 🪴 Frappe:
-
-     ```shell
-     sudo plymouth-set-default-theme -R catppuccin-frappe
-     ```
-
-   - 🌺 Macchiato:
-
-     ```shell
-     sudo plymouth-set-default-theme -R catppuccin-macchiato
-     ```
-
-   - 🌿 Mocha:
-
-     ```shell
-     sudo plymouth-set-default-theme -R catppuccin-mocha
-     ```
+1. Copy your favorite flavor(s) from [`themes/`](./themes/) folder to `/usr/share/plymouth/themes/`.
+2. Set your default Plymouth theme with `sudo plymouth-set-default-theme -R catppuccin-<flavor>`.
 
 ## 🙋 FAQ
 
-<details>
-<summary>plymouth-set-default-theme not available on Ubuntu/Mint</summary>
+- Q: **_"plymouth-set-default-theme not available on your operating system?"_**\
+  A: Some distributions, like Ubuntu/Mint, use `update-alternatives` for setting the plymouth theme.
 
-Some distributions use `update-alternatives` for setting the plymouth theme. After step 1 and 2, perform the following actions:
+  1. Install the theme(s):
 
-3. Install the themes:
+     ```shell
+     sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-latte/catppuccin-latte.plymouth 200
+     sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-frappe/catppuccin-frappe.plymouth 200
+     sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-macchiato/catppuccin-macchiato.plymouth 200
+     sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-mocha/catppuccin-mocha.plymouth 200
+     ```
 
-   ```shell
-   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-latte/catppuccin-latte.plymouth 200
-   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-frappe/catppuccin-frappe.plymouth 200
-   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-macchiato/catppuccin-macchiato.plymouth 200
-   sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/catppuccin-mocha/catppuccin-mocha.plymouth 200
-   ```
+  2. Set the default theme interactively:
 
-4. Set the default theme interactively:
+     ```shell
+     sudo update-alternatives --config default.plymouth
+     ```
 
-   ```shell
-   sudo update-alternatives --config default.plymouth
-   ```
+  3. Rebuild the initramfs:
 
-5. Rebuild the initramfs:
-
-   ```shell
-   sudo update-initramfs -u
-   ```
+     ```shell
+     sudo update-initramfs -u
+     ```
 
 </details>
 
